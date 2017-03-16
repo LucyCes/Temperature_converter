@@ -12,7 +12,7 @@ if (Number(temperatureInput)) {
       msg = msg + "<td>" + temperatureInput + " F" + "</td>" + "<td>" + (5 / 9 * (temperatureInput - 32)) + " C" + "</td>";
       msg = msg + "</tr>";
     }
-    document.getElementById("tempresults").innerHTML = "</table>";
+    document.getElementById("tempresults").innerHTML = msg + "</table>";
 } else {
   document.getElementById("tempresults").innerHTML = "You did not type a valid number";
 }
